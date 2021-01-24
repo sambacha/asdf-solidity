@@ -1,12 +1,12 @@
 <div align="center">
 
-# asdf-solidity ![Build](https://github.com/sambacha/asdf-solidity/workflows/Build/badge.svg) ![Lint](https://github.com/sambacha/asdf-solidity/workflows/Lint/badge.svg)
+# asdf-solidity 
 
-[solidity](https://github.com/sambacha/solidity) plugin for the [asdf version manager](https://asdf-vm.com).
+[solidity](https://github.com/ethereum/solidity) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
-# Contents
+## Contents
 
 - [Dependencies](#dependencies)
 - [Install](#install)
@@ -14,12 +14,29 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-# Dependencies
+## Dependencies
 
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `SVMRC`: set this environment variable in your shell config to load the correct version of solidity
 
-# Install
+## Overview 
+
+```bash
+svm --version
+```
+
+```bash
+svm use 0.6.12
+```
+
+### nvm like commands 
+
+```
+$ cat .svmrc
+> 0.7.12
+```
+
+## Install
 
 Plugin:
 
@@ -29,7 +46,7 @@ asdf plugin add solidity
 asdf plugin add https://github.com/sambacha/asdf-solidity.git
 ```
 
-solidity:
+#### solidity:
 
 ```shell
 # Show all installable versions
@@ -48,12 +65,12 @@ svm --version
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
 install & manage versions.
 
-# Contributing
+## Contributing
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
 [Thanks goes to these contributors](https://github.com/sambacha/asdf-solidity/graphs/contributors)!
 
-# License
+## License
 
-See [LICENSE](LICENSE) © [sam](https://github.com/sambacha/)
+See [LICENSE](LICENSE) © [the contributors](https://github.com/sambacha/)
