@@ -4,7 +4,7 @@
 # STDOUT. Otherwise, nothing is written to STDOUT and an error message is
 # written to STDERR.
 download_solidity_builds() {
-  local releases_url='https://repo.github.com/builds/elixir/builds.txt'
+  local releases_url='https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/list.txt'
 
   if ! curl -fs $releases_url; then
     cat >&2 <<EOS
